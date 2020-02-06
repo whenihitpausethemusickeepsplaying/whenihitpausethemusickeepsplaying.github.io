@@ -1,0 +1,108 @@
+@charset "UTF-8";
+html, body {
+  font-size: 1rem;
+  max-width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Georgia, sans-serif;
+  color: #000;
+}
+
+body {
+  background-image: url(achtergrond.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: cover;
+  text-shadow:
+    /* Outline */
+    -1px -1px 0.2 #000000,
+    1px -1px 0.2 #000000,
+    -1px 1px 0.2 #000000,
+    1px 1px 0.2 #000000,  
+    -2px 0.2 0.2 #000000,
+    2px 0.2 0.2 #000000,
+    0 2px 0.2 #000000,
+    0 -2px 0.2 #000000;
+}
+
+.header {
+  padding: 1rem;
+  margin-bottom: 1%;
+  text-align: left;
+  color: black;
+  font-size: 350%;
+  font-family: Georgia, sans-serif;
+  margin-left: auto;
+  text-shadow: 0 0 4px rgba(0,0,0,1);
+  color: transparent;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  line-height: 3rem;
+}
+
+.header a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Style the links inside the navigation bar */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomnav {
+  /*als position fixed moet zijn dan: position: fixed; */
+ 
+  text-align: center;
+  position:relative;
+  z-index:1;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+
+@font-face {
+font-family: 'Univers Condensed Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Univers Condensed Medium'), url('univers-condensed-medium-5871d3fdc2110.woff') format('woff');
+}
+
+
+.bottomnav a {
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-style: 'Georgia', sans-serif;
+  text-shadow: 0 0 3px rgba(0,0,0,1);
+  color: transparent;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  line-height: 3rem;
+  
+}
+
+
+
+/* Change the color of links on hover */
+.bottomnav a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+
+/* Add a color to the active/current link */
+.bottomnav a.active {
+  color: black;
+  text-decoration: underline;
+}
+
+
+.gedicht {
+  font-family: Georgia, sans-serif;
+  line-height: 1.5rem; 
+  font-size: 120%;
+}
